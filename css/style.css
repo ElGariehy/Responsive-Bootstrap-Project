@@ -1,0 +1,133 @@
+:root {
+  --mainColor: #f1c40f;
+  --chooseColor: #F0FFFF;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* body{
+    height: 2000px;
+} */
+.topbar {
+  background-color: var(--mainColor);
+  height: 2.9rem;
+  font-size: 1.5vw;
+  padding: 0.5rem 0;
+}
+.topbar i {
+  padding-right: 5px;
+}
+.slide{
+  width: 100%;
+  height: 100vh;
+}
+.carousel-item {
+  background: no-repeat center center scroll;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.carousel-caption {
+  z-index: 10;
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+  }
+.carousel-caption h3{
+  font-size: 3vw;
+}
+.carousel-caption h1{
+  font-size: 4.5vw;
+}
+.carousel-caption h1 span{
+  color: var(--mainColor);
+}
+.carousel-caption p{
+  font-size: 1.7vw;
+}
+.colorBTN{
+
+  color: white;
+  font-weight: bold;
+}
+.choose{
+  background-color: var(--chooseColor);
+}
+
+.choose-card i{
+  margin-bottom:20px;
+
+  font-size: 35px;
+  width: 80px; height: 80px;
+  border: 5px solid #FDAE18;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 
+	0 0 0 6px #FBC04B,
+	0 0 0 10px #F8D17F;
+}
+footer{
+  color: white;
+  background-image:linear-gradient(rgba(0, 0, 0,.7), rgba(0, 0, 0,.7)), url(../images/6.png) ;
+  background-position: center;
+  background-size: cover;
+}
+.social-icons a{
+  text-decoration: none;
+}
+.social-icons a i{
+  color: #343a40;
+  font-size: 25px;
+  background-color: var(--mainColor);
+  width: 40px; height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a i:hover{
+  background-color: #f1c40fbd;
+}
+footer .explore-links-ul{
+  list-style-position: inside;
+}
+
+ .latest-post-ul {
+  list-style-type: none;
+}
+.latest-post-ul li::before{
+  position: absolute;
+  font-family: 'Font Awesome 5 free';
+  content: "\f2bd";
+  font-weight: bold; 
+  font-size: x-large;
+  color: white;
+  left: 0;
+  top:  -5px;
+} 
+
+.latest-post-ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.bottom-footer .row{
+  display: flex;
+  justify-content: center;
+}
+.bottom-footer p{
+  margin-bottom: 0px;
+}
